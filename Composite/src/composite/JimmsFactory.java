@@ -1,7 +1,7 @@
 
 package composite;
 
-public class JimmsFactory extends TietokoneFactory {
+public class JimmsFactory implements TietokoneFactory {
 
     @Override
     public Laiteosa createEmolevy() {
