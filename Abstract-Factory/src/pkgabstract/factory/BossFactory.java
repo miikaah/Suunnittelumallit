@@ -1,7 +1,7 @@
 
 package pkgabstract.factory;
 
-public class BossFactory extends VaateFactory {
+public class BossFactory implements VaateFactory {
 
     @Override
     public Farkut createFarkut() {
