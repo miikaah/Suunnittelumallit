@@ -12,9 +12,4 @@ public class Prosessori implements Laiteosa {
     public double getHinta() {
         return hinta;
     }
-
-    @Override
-    public void addLaiteosa(Laiteosa osa) {
-        throw new UnsupportedOperationException("Leaf node.");
-    }
 }

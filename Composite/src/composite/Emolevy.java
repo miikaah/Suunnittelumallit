@@ -4,7 +4,7 @@ package composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Emolevy implements Laiteosa {
+public class Emolevy implements LaiteosaComposite {
 
     private double hinta;
     private List<Laiteosa> emolevynOsat = new ArrayList<>();
@@ -22,6 +22,7 @@ public class Emolevy implements Laiteosa {
         return yhtHinta;
     }
     
+    @Override
     public void addLaiteosa(Laiteosa osa) {
         if (!emolevynOsat.contains(osa)) {
             emolevynOsat.add(osa);

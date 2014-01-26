@@ -10,8 +10,8 @@ public class Composite {
         * laittamalla Emolevy Kotelon sisään
         */
         
-        Laiteosa kaikkiLaiteosat = new Kotelo(90);
-        Laiteosa emolevy = new Emolevy(100);
+        LaiteosaComposite kaikkiLaiteosat = new Kotelo(90);
+        LaiteosaComposite emolevy = new Emolevy(100);
         emolevy.addLaiteosa(new Prosessori(150.50));
         emolevy.addLaiteosa(new Muistipiiri(25.75));
         emolevy.addLaiteosa(new Muistipiiri(25.75));
@@ -25,7 +25,7 @@ public class Composite {
         * komponenttien luomiseen
         */
         TietokoneFactory tietokoneTehdas = new VerkkokauppaFactory();
-        Laiteosa tehdaskokoonpano = tietokoneTehdas.createKotelo();
+        LaiteosaComposite tehdaskokoonpano = tietokoneTehdas.createKotelo();
         tehdaskokoonpano.addLaiteosa(tietokoneTehdas.createEmolevy());
         tehdaskokoonpano.addLaiteosa(tietokoneTehdas.createProsessori());
         tehdaskokoonpano.addLaiteosa(tietokoneTehdas.createMuistipiiri());

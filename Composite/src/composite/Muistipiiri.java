@@ -12,10 +12,4 @@ public class Muistipiiri implements Laiteosa {
     public double getHinta() {
         return hinta;
     }
-
-    @Override
-    public void addLaiteosa(Laiteosa osa) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }

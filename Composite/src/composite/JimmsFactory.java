@@ -4,7 +4,7 @@ package composite;
 public class JimmsFactory implements TietokoneFactory {
 
     @Override
-    public Laiteosa createEmolevy() {
+    public LaiteosaComposite createEmolevy() {
         return new Emolevy(120.20);
     }
 
@@ -14,7 +14,7 @@ public class JimmsFactory implements TietokoneFactory {
     }
 
     @Override
-    public Laiteosa createKotelo() {
+    public LaiteosaComposite createKotelo() {
         return new Kotelo(120);
     }
 

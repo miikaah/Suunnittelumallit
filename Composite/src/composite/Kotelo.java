@@ -4,7 +4,7 @@ package composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Kotelo implements Laiteosa {
+public class Kotelo implements LaiteosaComposite {
     private double hinta;
     private List<Laiteosa> kotelonOsat = new ArrayList<>();
     
@@ -21,6 +21,7 @@ public class Kotelo implements Laiteosa {
         return yhtHinta;
     }
     
+    @Override
     public void addLaiteosa(Laiteosa osa) {
         if (!kotelonOsat.contains(osa)) {
             kotelonOsat.add(osa);

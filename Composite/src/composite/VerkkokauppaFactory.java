@@ -4,7 +4,7 @@ package composite;
 public class VerkkokauppaFactory implements TietokoneFactory {
 
     @Override
-    public Laiteosa createEmolevy() {
+    public LaiteosaComposite createEmolevy() {
         return new VerkkokauppaEmolevy();
     }
 
@@ -14,7 +14,7 @@ public class VerkkokauppaFactory implements TietokoneFactory {
     }
 
     @Override
-    public Laiteosa createKotelo() {
+    public LaiteosaComposite createKotelo() {
         return new VerkkokauppaKotelo();
     }
 
