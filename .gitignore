@@ -219,3 +219,5 @@ pip-log.txt
 ####################
 *.pdf
 
+/PinoJaJono/nbproject/private/
+/Observer/nbproject/private/
