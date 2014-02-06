@@ -1,10 +1,10 @@
 
 package state;
 
-public class GameContext implements CharacterState {
+public class PlayerContext implements CharacterState {
     private CharacterState currentState;
     
-    public GameContext() {
+    public PlayerContext() {
         setState(new Beginner());
     }
     

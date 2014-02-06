@@ -4,7 +4,7 @@ package state;
 public class main {
 
     public static void main(String[] args) {
-        final GameContext player = new GameContext();
+        final PlayerContext player = new PlayerContext();
         
         player.printState();
         player.attack();
